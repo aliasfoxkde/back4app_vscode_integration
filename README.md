@@ -39,6 +39,11 @@ A VSCode extension for integrating Back4App functionalities.
     - Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
     - Type `List Repositories` and select the "List Repositories" command.
 
+3. **Interact with the Agent**:
+    - Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
+    - Type `Interact with Agent` and select the "Interact with Agent" command.
+    - Provide input to interact with the agent and receive a response.
+
 ## Development
 
 ### Build the Extension
@@ -71,8 +76,5 @@ npm run lint
 
 ## Release Notes
 
-### 0.0.1
-
-- Initial release with "Hello World" command.
-- Added functionality to list all repositories of the authenticated GitHub user.
+See [release notes](./CHANGELOG.md)
 

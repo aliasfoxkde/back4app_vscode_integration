@@ -16,6 +16,12 @@ async function fetchRepositories(): Promise<string[]> {
     }
 }
 
+// Function to interact with the agent
+async function interactWithAgent(message: string): Promise<string> {
+    // This is a placeholder implementation. This should route to the actual agent API.
+    return `You said: ${message}`;
+}
+
 export function activate(context: vscode.ExtensionContext) {
     let helloWorldCommand = vscode.commands.registerCommand("back4appIntegration.helloWorld", () => {
         vscode.window.showInformationMessage("Hello World from Back4App Integration!");
@@ -32,8 +38,17 @@ export function activate(context: vscode.ExtensionContext) {
         }
     });
 
+    let interactCommand = vscode.commands.registerCommand("back4appIntegration.interact", async () => {
+        const message = await vscode.window.showInputBox({ placeHolder: "Ask the agent for help or input" });
+        if (message) {
+            const response = await interactWithAgent(message);
+            vscode.window.showInformationMessage(response);
+        }
+    });
+
     context.subscriptions.push(helloWorldCommand);
     context.subscriptions.push(listReposCommand);
+    context.subscriptions.push(interactCommand);
 }
 
 export function deactivate() {}
