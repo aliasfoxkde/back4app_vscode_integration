@@ -1,2 +1,2 @@
-# back4app_vscode_integration
-VScode Extension for back4app integration.
+# back4app VSCode Integration
+VSCode Extension for back4app integration.
