@@ -5,6 +5,7 @@ A VSCode extension for integrating Back4App functionalities.
 ## Features
 
 - Basic "Hello World" command to ensure the extension is working.
+- List all repositories of the authenticated GitHub user.
 
 ## Installation
 
@@ -23,10 +24,20 @@ A VSCode extension for integrating Back4App functionalities.
 
 ## Usage
 
+### Run the Extension
+
 1. Open the project in VSCode.
 2. Press `F5` to open a new VSCode window with the extension loaded.
-3. Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
-4. Type `Hello World` and select the "Hello World" command from the list.
+
+### Commands
+
+1. **Hello World Command**:
+    - Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
+    - Type `Hello World` and select the "Hello World" command.
+
+2. **List Repositories Command**:
+    - Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
+    - Type `List Repositories` and select the "List Repositories" command.
 
 ## Development
 
@@ -63,4 +74,5 @@ npm run lint
 ### 0.0.1
 
 - Initial release with "Hello World" command.
+- Added functionality to list all repositories of the authenticated GitHub user.
 
